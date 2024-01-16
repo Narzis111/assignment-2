@@ -233,6 +233,19 @@ select {
 .image-collage {
     margin-top: 2rem;
 }
+.img-text {
+    position: relative;
+    color: #FFF;
+text-align: center;
+font-size: 28px;
+font-weight: 800;
+  }
+  .centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
 
 .image-collage img {
     width: 100%;
@@ -278,10 +291,12 @@ select {
 .card-row1 {
     display: flex;
     justify-content: space-between;
+    height: 320px;
 }
 
 .card-row2 {
     align-items: center;
+    height: 320px;
 }
 
 .card-container h6 {
@@ -291,24 +306,30 @@ select {
     font-weight: 800;
 }
 
-.card1,
-.card2 {
+.card1
+ {
     width: 48%;
-    height: 284px;
     border-radius: 16px;
     border: 1px solid rgba(251, 181, 99, 0.20);
     background: rgba(251, 181, 99, 0.05);
-    padding: 32px 55px 32px 32px;
+    padding: 32px;
+}
+.card2{
+    width: 48%;
+    border-radius: 16px;
+border: 1px solid rgba(41, 206, 246, 0.20);
+background: rgba(41, 206, 246, 0.05);
+    padding: 32px;
+
 }
 
 .card-row2 {
     width: 50%;
-    height: 284px;
     border-radius: 16px;
     border: 1px solid rgba(233, 68, 68, 0.20);
     background: rgba(233, 68, 68, 0.05);
     margin-top: 24px;
-    padding: 32px 55px 32px 32px;
+    padding: 32px;
 }
 
 .choose img {
@@ -328,10 +349,29 @@ select {
     border-radius: 15px;
 }
 
-.place-content,
-.place-video {
+.place-content{
     width: 48%;
 }
+.place-video {
+    width: 48%;
+    position: relative;
+    text-align: center;
+    color: #FFF;
+font-size: 24px;
+font-weight: 700;
+}
+
+.place-img-text, .hr-bottom{
+    width: 100%
+}
+.hr-bottom {
+        
+    color: #e00d0d;
+position: absolute;
+bottom: 20px;
+left: 30px;
+}
+
 
 .place-video img {
     width: 100%;
