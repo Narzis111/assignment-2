@@ -30,8 +30,7 @@ body {
 }
 
 header,
-main
- {
+main {
     max-width: 1250px;
     margin: 0 auto;
     box-sizing: border-box;
@@ -125,9 +124,7 @@ nav p {
     background: rgba(255, 255, 255, 0.30);
     width: 80%
 }
-.hide{
-    display: none;
-}
+
 button {
     background-color: #FF5400;
     color: white;
@@ -213,13 +210,15 @@ select {
 .choose,
 .place,
 .newsletter,
-.amazing, .discount {
+.amazing,
+.discount {
     margin: 50px 135px;
     max-width: 1250px;
 }
 
 .destination-text,
-.choose-text, .discount-text {
+.choose-text,
+.discount-text {
     text-align: center;
 }
 
@@ -235,19 +234,21 @@ select {
 .image-collage {
     margin-top: 2rem;
 }
+
 .img-text {
     position: relative;
     color: #FFF;
-text-align: center;
-font-size: 28px;
-font-weight: 800;
-  }
-  .centered {
+    text-align: center;
+    font-size: 28px;
+    font-weight: 800;
+}
+
+.centered {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-  }
+}
 
 .image-collage img {
     width: 100%;
@@ -276,7 +277,7 @@ font-weight: 800;
 
 .amazing h4 {
     padding-top: 50px;
-  
+
 }
 
 .amazing i {
@@ -284,63 +285,76 @@ font-weight: 800;
     font-size: 64px;
     color: #FF5400;
 }
+
 /* discount */
-.discount-card{
+.discount-card {
     width: 500px;
-height: 330px;
+    height: 330px;
     border-radius: 16px;
-border: 2px solid #FFF;
-background: rgba(255, 255, 255, 0.80);
-backdrop-filter: blur(2.5px);
-position: absolute;
-top: 50px;
-right: 50px;
-padding: 30px;
-}
-.discount-middle{
+    border: 2px solid #FFF;
+    background: rgba(255, 255, 255, 0.80);
+    backdrop-filter: blur(2.5px);
     position: absolute;
-bottom: 50px;
-right: 420px;
+    top: 50px;
+    right: 50px;
+    padding: 30px;
 }
-.discount-card-container{
+
+.discount-middle {
+    position: absolute;
+    bottom: 50px;
+    right: 420px;
+}
+
+.discount-card-container {
     position: relative;
 }
-.discount img{
+
+.discount img {
     width: 100%;
+    height: 500px;
     margin-bottom: 30px;
 }
-.icon-container{
-    
+
+.icon-container {
+
     flex-direction: row;
     justify-content: center;
-    
+
     /* align-items: center; */
 }
-.icon{
-    display:inline-flex;
+
+.icon {
+    display: inline-flex;
     width: 30%;
     flex-wrap: nowrap;
 }
-.icon i{
+
+.icon i {
     color: #FF5400;
-    margin-top:5px;
+    margin-top: 5px;
 }
-.discount p{
+
+.discount p {
     color: #5A5A5D;
 }
-.discount button{
+
+.discount button {
     border-radius: 8px;
 }
-.discount h6{
+
+.discount h6 {
     color: #131318;
-font-size: 24px;
-font-weight: 800;
+    font-size: 24px;
+    font-weight: 800;
 }
-.discount h5{
+
+.discount h5 {
     color: #FF5400;
-font-size: 20px;
-font-weight: 800;
+    font-size: 20px;
+    font-weight: 800;
 }
+
 /* choose card */
 
 .card-container {
@@ -365,19 +379,19 @@ font-weight: 800;
     font-weight: 800;
 }
 
-.card1
- {
+.card1 {
     width: 48%;
     border-radius: 16px;
     border: 1px solid rgba(251, 181, 99, 0.20);
     background: rgba(251, 181, 99, 0.05);
     padding: 32px;
 }
-.card2{
+
+.card2 {
     width: 48%;
     border-radius: 16px;
-border: 1px solid rgba(41, 206, 246, 0.20);
-background: rgba(41, 206, 246, 0.05);
+    border: 1px solid rgba(41, 206, 246, 0.20);
+    background: rgba(41, 206, 246, 0.05);
     padding: 32px;
 
 }
@@ -408,28 +422,31 @@ background: rgba(41, 206, 246, 0.05);
     border-radius: 15px;
 }
 
-.place-content{
+.place-content {
     width: 45%;
 }
+
 .place-video {
     width: 45%;
     position: relative;
     text-align: center;
     color: #FFF;
-font-size: 24px;
-font-weight: 700;
+    font-size: 24px;
+    font-weight: 700;
 }
 
-.place-img-text, .hr-bottom{
+.place-img-text,
+.hr-bottom {
     width: 100%
 }
-.bottom hr{
+
+.bottom hr {
     width: 97%;
     position: absolute;
     bottom: 16px;
     left: 8px;
     border: 2px solid white;
-    }
+}
 
 
 
@@ -443,13 +460,14 @@ font-weight: 700;
 }
 
 /* newsletter */
-.newsletter{
+.newsletter {
     margin: 50px 135px;
     max-width: 1250px;
 }
-.newsletter-container{
+
+.newsletter-container {
     display: flex;
-    justify-content:space-between;
+    justify-content: space-between;
     position: relative;
 }
 
@@ -480,6 +498,7 @@ hr {
     height: 500px;
     width: 48%;
 }
+
 .newsletter-img {
     width: 48%;
     position: relative;
@@ -500,9 +519,9 @@ hr {
     bottom: 50px;
     border-radius: 16px;
     width: 330px;
-height: 100px;
-transform: rotate(-19.628deg);
-display: block;
+    height: 100px;
+    transform: rotate(-19.628deg);
+    display: block;
 }
 
 .btn-text {
@@ -531,8 +550,8 @@ display: block;
 }
 
 footer {
-    padding: 70px;
-    margin-top: 50px;
+    padding-top: 90px;
+    margin-top: 0px;
     background: rgba(19, 19, 24, 0.05);
     height: 450px;
     text-align: center;
@@ -560,7 +579,11 @@ footer p {
     font-size: 16px;
     font-weight: 300;
     padding-bottom: 50px;
+    text-align: center;
+}
 
+.social {
+    text-align: center;
 }
 
 .hr-footer {
@@ -573,4 +596,9 @@ footer p {
     height: 24px;
     width: 24px;
 
+}
+
+.foot-center {
+    text-align: center;
+    align-items: center;
 }
