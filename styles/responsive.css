@@ -3,18 +3,20 @@
 /* mobile devices */
 @media screen and (max-width: 576px) {
 
-    .nav-bar {
+    /* .nav-bar {
         margin: 0;
     }
 
-    header,
-    body main,
-    footer,
-    section {
-        margin: 0 auto;
+    header, body, main, footer, section {
         padding: 0;
         border: 0;
         box-sizing: border-box;
+    } */
+    body{
+        padding: 0;
+        border: 0;
+        box-sizing: border-box;
+
     }
 
     .section-title {
@@ -53,22 +55,23 @@
 
     }
 
-    nav,
+    /* nav,
     header,
     main,
     footer,
     .banner,
     .amazing,
     .popular,
-    .place,
     .choose,
-    .newsletter,
-    .amazing {
+    .newsletter {
         margin: 0 auto;
-    }
+    } */
 
+/* .place{
+    margin: 0;
+} */
     .destination {
-        margin: 0 auto;
+        /* margin: 0 auto; */
         padding: 10px;
     }
 
@@ -84,22 +87,21 @@
         margin: 20px;
     }
 
-    .place,
-    .amazing,
+    /* .amazing,
     .newsletter {
         margin: 0 auto;
 
-    }
+    } */
 
-    .choose,
+    /* .choose,
     .place-video {
 
         margin: 0 auto;
-    }
+    } */
 
     .place-content,
     .place-video {
-        padding: 20px;
+        
         width: 100%;
     }
 
@@ -108,22 +110,30 @@
     }
 
     .banner,
-    .choose,
     .place-content,
-    .destination .newsletter,
+    .destination .newsletter-container,
     .card-row1,
     .popular {
         display: flex;
         flex-direction: column;
         margin: 0;
-
     }
+    .place-content{
+        padding: 20px;
+    }
+ 
 
     .place {
         flex-wrap: wrap;
         flex-direction: column;
     }
-
+    .bottom hr{
+    width: 97%;
+    position: absolute;
+    bottom: 16px;
+    left: 8px;
+    border: 2px solid white;
+    }
     nav {
         flex-direction: row;
     }
@@ -151,7 +161,7 @@
 
     .banner-form-container,
     .card-row1,
-    .newsletter {
+    .newsletter-container {
         display: flex;
         flex-direction: column;
 
@@ -164,7 +174,6 @@
     .popular-img {
         width: 80%;
         margin-top: 0;
-
         height: 80%;
     }
 
@@ -176,12 +185,24 @@
     }
 
     .card1,
-    .card2,
-    .card-row2 {
+    .card2
+     {
         width: 100%;
-        height: 80%;
-        margin-top: 20px;
-        margin-left: 0;
+        height: 100%;
+        margin-bottom: 100px;
+
+    }
+    .card-row2{
+        width: 100%;
+        height: 100%;
+        margin-top: 520px;
+
+    }
+    .discount{
+        margin: 0;
+    }
+    .discount-card-container{
+        width: 100%;
     }
 
     .row1,
@@ -206,7 +227,7 @@
     }
 
     .place-content button {
-        width: 40%;
+        width: 67%;
     }
 
     .btn-text-2 {
@@ -219,9 +240,10 @@
     }
 
     .news-button2 {
-        left: 215px;
-        width: 235px;
-        height: 60px
+        bottom: 40px;
+        left: 60px;
+    width: 78%;
+        height: 70px
     }
 
     .newsletter-content {
@@ -235,10 +257,8 @@
     }
 
     footer {
-        margin: 0 auto;
+     
         padding-top: 30px;
-
         align-items: center;
-
     }
 }

@@ -30,9 +30,8 @@ body {
 }
 
 header,
-footer,
-main,
-body {
+main
+ {
     max-width: 1250px;
     margin: 0 auto;
     box-sizing: border-box;
@@ -117,15 +116,18 @@ nav p {
 
 
 .banner-form-container {
-    display: inline-flex;
+    display: flex;
+    justify-content: center;
     align-items: center;
     gap: 8px;
     padding: 16px;
     border-radius: 8px;
     background: rgba(255, 255, 255, 0.30);
-
+    width: 80%
 }
-
+.hide{
+    display: none;
+}
 button {
     background-color: #FF5400;
     color: white;
@@ -211,13 +213,13 @@ select {
 .choose,
 .place,
 .newsletter,
-.amazing {
+.amazing, .discount {
     margin: 50px 135px;
-    /* max-width: 1250px; */
+    max-width: 1250px;
 }
 
 .destination-text,
-.choose-text {
+.choose-text, .discount-text {
     text-align: center;
 }
 
@@ -264,16 +266,17 @@ font-weight: 800;
     border-radius: 16px;
 }
 
-.amazing h4,
-.amazing p {
+
+.amazing-container {
     color: #131318;
     background: rgba(255, 255, 255, 0.30);
     border-radius: 8px;
+    height: 200px;
 }
 
 .amazing h4 {
     padding-top: 50px;
-    margin: 0;
+  
 }
 
 .amazing i {
@@ -281,7 +284,63 @@ font-weight: 800;
     font-size: 64px;
     color: #FF5400;
 }
-
+/* discount */
+.discount-card{
+    width: 500px;
+height: 330px;
+    border-radius: 16px;
+border: 2px solid #FFF;
+background: rgba(255, 255, 255, 0.80);
+backdrop-filter: blur(2.5px);
+position: absolute;
+top: 50px;
+right: 50px;
+padding: 30px;
+}
+.discount-middle{
+    position: absolute;
+bottom: 50px;
+right: 420px;
+}
+.discount-card-container{
+    position: relative;
+}
+.discount img{
+    width: 100%;
+    margin-bottom: 30px;
+}
+.icon-container{
+    
+    flex-direction: row;
+    justify-content: center;
+    
+    /* align-items: center; */
+}
+.icon{
+    display:inline-flex;
+    width: 30%;
+    flex-wrap: nowrap;
+}
+.icon i{
+    color: #FF5400;
+    margin-top:5px;
+}
+.discount p{
+    color: #5A5A5D;
+}
+.discount button{
+    border-radius: 8px;
+}
+.discount h6{
+    color: #131318;
+font-size: 24px;
+font-weight: 800;
+}
+.discount h5{
+    color: #FF5400;
+font-size: 20px;
+font-weight: 800;
+}
 /* choose card */
 
 .card-container {
@@ -350,10 +409,10 @@ background: rgba(41, 206, 246, 0.05);
 }
 
 .place-content{
-    width: 48%;
+    width: 45%;
 }
 .place-video {
-    width: 48%;
+    width: 45%;
     position: relative;
     text-align: center;
     color: #FFF;
@@ -364,13 +423,14 @@ font-weight: 700;
 .place-img-text, .hr-bottom{
     width: 100%
 }
-.hr-bottom {
-        
-    color: #e00d0d;
-position: absolute;
-bottom: 20px;
-left: 30px;
-}
+.bottom hr{
+    width: 97%;
+    position: absolute;
+    bottom: 16px;
+    left: 8px;
+    border: 2px solid white;
+    }
+
 
 
 .place-video img {
@@ -383,11 +443,17 @@ left: 30px;
 }
 
 /* newsletter */
-.newsletter {
-    display: flex;
-    justify-content: space-between;
-    padding: 30px;
+.newsletter{
+    margin: 50px 135px;
+    max-width: 1250px;
 }
+.newsletter-container{
+    display: flex;
+    justify-content:space-between;
+    position: relative;
+}
+
+
 
 .form-newsletter input {
     border-radius: 8px;
@@ -412,13 +478,14 @@ hr {
     border: 1px solid #FF5400;
     padding: 30px;
     height: 500px;
+    width: 48%;
 }
-
-.newsletter-content,
 .newsletter-img {
     width: 48%;
     position: relative;
+
 }
+
 
 .news-button {
     width: 100%;
@@ -429,13 +496,13 @@ hr {
 
 .news-button2 {
     position: absolute;
-    left: 195px;
-    bottom: 56px;
+    left: 635px;
+    bottom: 50px;
     border-radius: 16px;
-    width: 60%;
-    height: 90px;
-    transform: rotate(-30.628deg);
-    display: block;
+    width: 330px;
+height: 100px;
+transform: rotate(-19.628deg);
+display: block;
 }
 
 .btn-text {
@@ -459,13 +526,15 @@ hr {
 .newsletter-img img {
     width: 100%;
     height: 500px;
-    margin-left: 20px;
+    object-fit: cover;
+    border-radius: 16px;
 }
 
 footer {
     padding: 70px;
+    margin-top: 50px;
     background: rgba(19, 19, 24, 0.05);
-    height: 350px;
+    height: 450px;
     text-align: center;
 }
 
